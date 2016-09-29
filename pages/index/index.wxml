@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="main-hd">
+    <text class="appname">{{appname}}</text>
+  </view>
+  <view class="main-bd">
+    <text class="">todo</text>
+  </view>
+</view>

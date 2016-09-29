@@ -1,0 +1,14 @@
+/**index.wxss**/
+.main-hd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400rpx;
+  background-color: #4fc08d;
+  color: #fff;
+  font-size: 80rpx;
+}
+.appname{
+  padding-bottom: 30rpx;
+  margin-bottom: 30rpx;
+}
