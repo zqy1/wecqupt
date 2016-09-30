@@ -6,7 +6,7 @@
   height: 400rpx;
   background-color: #4fc08d;
   color: #fff;
-  font-size: 80rpx;
+  font-size: 100rpx;
 }
 .appname{
   padding-bottom: 30rpx;
