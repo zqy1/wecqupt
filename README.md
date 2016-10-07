@@ -20,8 +20,26 @@ wecqupt
             └─ other.js
 ```
 
-### 资料
+### 参考资料
 
 * （重要）官方开发文档：https://mp.weixin.qq.com/debug/wxadoc/dev/
 * 开发工具：https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html
 * 更多资料：https://github.com/Aufree/awesome-wechat-weapp
+
+#### v1.0功能
+* 查询
+  * **课表查询**
+  * **成绩查询**
+  * **考试查询**
+  * **空教室查询**
+  * **一卡通余额**
+  * **借阅信息**
+  * **学费信息**
+  * **水电费查询**
+  * **物业报修**
+* 资讯
+  * **教务公告**
+  * **OA公告**
+  * **会议通知**
+  * **学术讲座**
+  * **综合新闻**
