@@ -20,9 +20,15 @@ wecqupt
        │    ├─ news.wxss
        │    └─ news.js
        ├─ more      // 更多
-       │    ├─ more.wxml
+       │    ├─ more.wxml    // 更多 (含绑定用户)
        │    ├─ more.wxss
-       │    └─ more.js
+       │    ├─ more.js
+       │    ├─ info.wxml    // 用户信息
+       │    ├─ info.wxss
+       │    ├─ info.js
+       │    ├─ about.wxml   // 关于
+       │    ├─ about.wxss
+       │    └─ about.js
        └─ core      // 主页功能文件夹
             ├─ kb       // 课表
             │    ├─ kb.wxml
@@ -64,26 +70,26 @@ wecqupt
   * **综合新闻**
 * 更多
 
-| 功能      | 路径                       |
-| -------- | -------------------------- |
-|:**主页** :| pages/index/index(.wxml)   |
-| 课表查询   | pages/core/kb/kb           |
-| 成绩查询   | pages/core/cj/cj           |
-| 考试查询   | pages/core/ks/ks           |
-| 空教室查询 | pages/core/kjs/kjs         |
-| 学生查询   | pages/core/xs/xs           |
-| 一卡通余额 | pages/core/ykt/ykt         |
-| 借阅信息   | pages/core/jy/jy           |
-| 学费信息   | pages/core/xf/xf           |
-| 水电费查询 | pages/core/sdf/sdf         |
-| 物业报修   | pages/core/bx/bx           |
-|:**资讯** :| pages/news/news            |
-| 教务公告   |                            |
-| OA公告    |                            |
-| 会议通知   |                            |
-| 学术讲座   |                            |
-| 综合新闻   |                            |
-|:**更多** :| pages/more/more (含绑定用户) |
-| 用户信息   | pages/more/info            |
-| 关于      | pages/more/about           |
-| 反馈      | (跳转至github - new issue)  |
+| 功能        | 路径                        |
+| ----------- | -------------------------- |
+| **【主页】** | pages/index/index(.wxml)   |
+| 课表查询     | pages/core/kb/kb           |
+| 成绩查询     | pages/core/cj/cj           |
+| 考试查询     | pages/core/ks/ks           |
+| 空教室查询   | pages/core/kjs/kjs         |
+| 学生查询     | pages/core/xs/xs           |
+| 一卡通余额   | pages/core/ykt/ykt         |
+| 借阅信息     | pages/core/jy/jy           |
+| 学费信息     | pages/core/xf/xf           |
+| 水电费查询   | pages/core/sdf/sdf         |
+| 物业报修     | pages/core/bx/bx           |
+| **【资讯】** | pages/news/news            |
+| 教务公告     | (同上)                      |
+| OA公告      | (同上)                      |
+| 会议通知     | (同上)                      |
+| 学术讲座     | (同上)                      |
+| 综合新闻     | (同上)                      |
+| **【更多】** | pages/more/more (含绑定用户) |
+| 用户信息     | pages/more/info            |
+| 关于        | pages/more/about           |
+| 反馈        | (跳转至github - new issue)  |
