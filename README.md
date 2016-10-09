@@ -24,16 +24,12 @@ wecqupt
        │    ├─ more.wxss
        │    └─ more.js
        └─ core      // 主页功能文件夹
-            ├─ kebiao     // 课表
-            │    ├─ kebiao.wxml
-            │    ├─ kebiao.wxss
-            │    └─ kebiao.js
-            └─ other      // 其他
+            ├─ kb       // 课表
+            │    ├─ kb.wxml
+            │    ├─ kb.wxss
+            │    └─ kb.js
+            └─ other    // 其他
                  └─ ..
-```
-```
-// 路由
-
 ```
 
 ### 参考资料
@@ -42,10 +38,14 @@ wecqupt
 * 开发工具：https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html
 * 更多资料：https://github.com/Aufree/awesome-wechat-weapp
 * 设计指南：https://mp.weixin.qq.com/debug/wxadoc/design
-* 布局例子：https://github.com/hardog/wechat-app-flexlayout
+* flex布局
+  * 语法篇：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+  * 实例篇：http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
 
-#### v1.0功能
-* 查询
+## v1.0
+### 功能及页面
+
+* 主页
   * **课表查询**
   * **成绩查询**
   * **考试查询**
@@ -62,3 +62,28 @@ wecqupt
   * **会议通知**
   * **学术讲座**
   * **综合新闻**
+* 更多
+
+| 功能      | 路径                       |
+| -------- | -------------------------- |
+|:**主页** :| pages/index/index(.wxml)   |
+| 课表查询   | pages/core/kb/kb           |
+| 成绩查询   | pages/core/cj/cj           |
+| 考试查询   | pages/core/ks/ks           |
+| 空教室查询 | pages/core/kjs/kjs         |
+| 学生查询   | pages/core/xs/xs           |
+| 一卡通余额 | pages/core/ykt/ykt         |
+| 借阅信息   | pages/core/jy/jy           |
+| 学费信息   | pages/core/xf/xf           |
+| 水电费查询 | pages/core/sdf/sdf         |
+| 物业报修   | pages/core/bx/bx           |
+|:**资讯** :| pages/news/news            |
+| 教务公告   |                            |
+| OA公告    |                            |
+| 会议通知   |                            |
+| 学术讲座   |                            |
+| 综合新闻   |                            |
+|:**更多** :| pages/more/more (含绑定用户) |
+| 用户信息   | pages/more/info            |
+| 关于      | pages/more/about           |
+| 反馈      | (跳转至github - new issue)  |

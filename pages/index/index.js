@@ -7,39 +7,39 @@ Page({
       {
         name: '课表查询',
         icon: 'core-icon.png',
-        page: 'kebiao'
+        page: 'kb'
       },
       {
         name: '课表查询',
         icon: 'core-icon.png',
-        page: 'kebiao'
+        page: 'kb'
       },
       {
         name: '课表查询',
         icon: 'core-icon.png',
-        page: 'kebiao'
+        page: 'kb'
       },
       {
         name: '课表查询',
         icon: 'core-icon.png',
-        page: 'kebiao'
+        page: 'kb'
       },
       {
         name: '课表查询',
         icon: 'core-icon.png',
-        page: 'kebiao'
+        page: 'kb'
       },
       {
         name: '课表查询',
         icon: 'core-icon.png',
-        page: 'kebiao'
+        page: 'kb'
       },
     ],
     list: [
       {
         name: '今日课表',
         icon: 'core-icon.png',
-        page: 'kebiao'
+        page: 'kb'
       }
     ]
   }

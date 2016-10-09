@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/news/news",
     "pages/more/more",
-    "pages/core/kebiao/kebiao"
+    "pages/core/kb/kb"
   ],
   "window":{
     "backgroundTextStyle": "light",
