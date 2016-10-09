@@ -14,7 +14,7 @@
     "pages/core/jy/jy",
     "pages/core/xf/xf",
     "pages/core/sdf/sdf",
-    "pages/core/bx/bx",
+    "pages/core/bx/bx"
   ],
   "window":{
     "backgroundTextStyle": "light",
