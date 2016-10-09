@@ -1,5 +1,6 @@
 /**index.wxss**/
 .container{
+  background-color: #f0eff5;
   background-image: url('/images/index/tri.png');
   background-repeat: no-repeat;
   background-size: 100% auto; 
@@ -10,7 +11,7 @@
   flex-flow: row wrap;
   align-content: flex-start;
   background: #fff;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e5e5e5;
   padding: 10rpx;
   margin-bottom: 15rpx;
   min-height: 175rpx;
@@ -38,16 +39,16 @@
   display: flex;
   flex-direction: column;
   background: #fff;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 15rpx;
-  padding: 0 30rpx; 
+  padding-left: 30rpx; 
 }
 .list-item-hd{
   display: flex;
   align-items: center;
   height: 75rpx;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #d2d3d5;
 }
 .list-item-icon{
   width: 35rpx;

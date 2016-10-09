@@ -2,8 +2,8 @@
 <view class="container">
   <view class="main-core">
     <block wx:for="{{core}}">
-      <navigator class="main-core-item" url="/pages/core/{{item.page}}/{{item.page}}">
-        <image class="core-item-icon" src="/images/core/{{item.icon}}" />
+      <navigator class="main-core-item" url="/pages/core/{{item.id}}/{{item.id}}">
+        <image class="core-item-icon" src="/images/core/{{item.id}}.png" />
         <text class="core-item-name">{{item.name}}</text>
       </navigator>
     </block>
@@ -11,7 +11,7 @@
   <view class="main-list">
     <view class="main-list-item" wx:for="{{list}}">
       <view class="list-item-hd">
-        <image class="list-item-icon" src="/images/core/{{item.icon}}" />
+        <image class="list-item-icon" src="/images/core/{{item.id}}.png" />
         <text class="list-item-name">{{item.name}}</text>
       </view>
       <view class="list-item-bd"></view>

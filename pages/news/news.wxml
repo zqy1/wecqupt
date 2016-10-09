@@ -1,4 +1,15 @@
 <!--news.wxml-->
 <view class="container">
-  
+  <scroll-view class="filter" scroll-x="true">
+    <block wx:for="{{filter}}">
+      <image class="filter-item" id="{{item.id}}" bindtap="changeFilter" src="/images/news/{{item.id + (filter_active === item.id ? '@colour.png' : '@gray.png')}}" />
+    </block>
+  </scroll-view>
+  <view class="content">
+    <block wx:for="{{list}}">
+      <view class="list-item">
+      
+      </view>
+    </block>
+  </view>
 </view>

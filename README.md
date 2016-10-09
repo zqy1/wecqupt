@@ -43,7 +43,7 @@ wecqupt
 * （重要）官方开发文档：https://mp.weixin.qq.com/debug/wxadoc/dev/
 * 开发工具：https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html
 * 更多资料：https://github.com/Aufree/awesome-wechat-weapp
-* 设计指南：https://mp.weixin.qq.com/debug/wxadoc/design
+* 设计指南：https://mp.weixin.qq.com/debug/wxadoc/design/
 * flex布局
   * 语法篇：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
   * 实例篇：http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
@@ -57,10 +57,10 @@ wecqupt
 | 1   | **【主页】** | pages/index/index(.wxml)   |
 | 10  | 课表查询     | pages/core/kb/kb           |
 | 11  | 成绩查询     | pages/core/cj/cj           |
-| 12  | 考试查询     | pages/core/ks/ks           |
+| 12  | 考试安排     | pages/core/ks/ks           |
 | 13  | 空教室查询   | pages/core/kjs/kjs         |
 | 14  | 学生查询     | pages/core/xs/xs           |
-| 15  | 一卡通余额   | pages/core/ykt/ykt         |
+| 15  | 一卡通       | pages/core/ykt/ykt         |
 | 16  | 借阅信息     | pages/core/jy/jy           |
 | 17  | 学费信息     | pages/core/xf/xf           |
 | 18  | 水电费查询   | pages/core/sdf/sdf         |
@@ -77,6 +77,7 @@ wecqupt
 |     | 反馈        | (跳转至github - new issue)  |
 
 ### 分工
+> 项目期限：10月底前
 
 | who    | todo0                       |
 |:------:| --------------------------- |
