@@ -16,16 +16,16 @@ wecqupt
        │    ├─ index.wxss
        │    └─ index.js
        ├─ news      // 资讯
-       │    ├─ news.wxml
+       │    ├─ news.wxml    // 列表
        │    ├─ news.wxss
-       │    └─ news.js
+       │    ├─ news.js
+       │    ├─ detail.wxml   // 详情
+       │    ├─ detail.wxss
+       │    └─ detail.js
        ├─ more      // 更多
        │    ├─ more.wxml    // 更多 (含绑定用户)
        │    ├─ more.wxss
        │    ├─ more.js
-       │    ├─ info.wxml    // 用户信息
-       │    ├─ info.wxss
-       │    ├─ info.js
        │    ├─ about.wxml   // 关于
        │    ├─ about.wxss
        │    └─ about.js
@@ -71,9 +71,10 @@ wecqupt
 |     | 会议通知     | (同上)                      |
 |     | 学术讲座     | (同上)                      |
 |     | 综合新闻     | (同上)                      |
+| 20  | 资讯详情     | pages/news/detail          |
 | 3   | **【更多】** | pages/more/more (含绑定用户) |
-| 30  | 用户信息     | pages/more/info            |
-| 31  | 关于        | pages/more/about           |
+|     | 用户信息     | (同上)                      |
+| 30  | 关于        | pages/more/about           |
 |     | 反馈        | (跳转至github - new issue)  |
 
 ### 分工
@@ -81,11 +82,11 @@ wecqupt
 
 | who    | todo0                       |
 |:------:| --------------------------- |
-| 闵聪    | 项目架构，页面1、2、3          |
+| 闵聪    | 项目架构，页面1、2、20         |
 | 莫梦竟成 | 视觉设计交互                 |
 | 杨奇奇   | 视觉设计交互                 |
 | 刘浩     | 后台接口完善（基于i重邮）      |
 | 宋思辰   | 页面10、13、14               |
 | 吴鹏举   | 页面11、12、17               |
 | 苏丹     | 页面15、16、18               |
-| 王晓宇   | 页面19、30、31               |
+| 王晓宇   | 页面19、3、30                |

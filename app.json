@@ -2,8 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/news/news",
+    "pages/news/detail",
     "pages/more/more",
-    "pages/more/info",
     "pages/more/about",
     "pages/core/kb/kb",
     "pages/core/cj/cj",
