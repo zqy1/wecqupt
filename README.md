@@ -9,15 +9,31 @@ wecqupt
   ├─ app.wxss       // 全局样式
   ├─ utils          // 模块化文件夹，利用module.exports暴露接口，通过require(path)使用模块接口
   │    └─ util.js   // 模块化例子
+  ├─ images         // 图片文件夹
   └─ pages          // 页面文件夹
-       ├─ index       // index页面
+       ├─ index     // 主页
        │    ├─ index.wxml
        │    ├─ index.wxss
        │    └─ index.js
-       └─ other       // other页面
-            ├─ other.wxml
-            ├─ other.wxss
-            └─ other.js
+       ├─ news      // 资讯
+       │    ├─ news.wxml
+       │    ├─ news.wxss
+       │    └─ news.js
+       ├─ more      // 更多
+       │    ├─ more.wxml
+       │    ├─ more.wxss
+       │    └─ more.js
+       └─ core      // 主页功能文件夹
+            ├─ kebiao     // 课表
+            │    ├─ kebiao.wxml
+            │    ├─ kebiao.wxss
+            │    └─ kebiao.js
+            └─ other      // 其他
+                 └─ ..
+```
+```
+// 路由
+
 ```
 
 ### 参考资料
@@ -25,6 +41,8 @@ wecqupt
 * （重要）官方开发文档：https://mp.weixin.qq.com/debug/wxadoc/dev/
 * 开发工具：https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html
 * 更多资料：https://github.com/Aufree/awesome-wechat-weapp
+* 设计指南：https://mp.weixin.qq.com/debug/wxadoc/design
+* 布局例子：https://github.com/hardog/wechat-app-flexlayout
 
 #### v1.0功能
 * 查询

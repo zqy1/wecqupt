@@ -1,9 +1,20 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="main-hd">
-    <text class="appname">{{appname}}</text>
+  <view class="main-core">
+    <block wx:for="{{core}}">
+      <navigator class="main-core-item" url="/pages/core/{{item.page}}/{{item.page}}">
+        <image class="core-item-icon" src="/images/core/{{item.icon}}" />
+        <text class="core-item-name">{{item.name}}</text>
+      </navigator>
+    </block>
   </view>
-  <view class="main-bd">
-    <text class="">todo</text>
+  <view class="main-list">
+    <view class="main-list-item" wx:for="{{list}}">
+      <view class="list-item-hd">
+        <image class="list-item-icon" src="/images/core/{{item.icon}}" />
+        <text class="list-item-name">{{item.name}}</text>
+      </view>
+      <view class="list-item-bd"></view>
+    </view>
   </view>
 </view>

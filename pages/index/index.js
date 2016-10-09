@@ -3,6 +3,44 @@
 var app = getApp()
 Page({
   data: {
-    appname: 'We重邮'
+    core: [
+      {
+        name: '课表查询',
+        icon: 'core-icon.png',
+        page: 'kebiao'
+      },
+      {
+        name: '课表查询',
+        icon: 'core-icon.png',
+        page: 'kebiao'
+      },
+      {
+        name: '课表查询',
+        icon: 'core-icon.png',
+        page: 'kebiao'
+      },
+      {
+        name: '课表查询',
+        icon: 'core-icon.png',
+        page: 'kebiao'
+      },
+      {
+        name: '课表查询',
+        icon: 'core-icon.png',
+        page: 'kebiao'
+      },
+      {
+        name: '课表查询',
+        icon: 'core-icon.png',
+        page: 'kebiao'
+      },
+    ],
+    list: [
+      {
+        name: '今日课表',
+        icon: 'core-icon.png',
+        page: 'kebiao'
+      }
+    ]
   }
 })

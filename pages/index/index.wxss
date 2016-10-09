@@ -1,14 +1,62 @@
 /**index.wxss**/
-.main-hd{
+.container{
+  background-image: url('/images/index/tri.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto; 
+  background-position: bottom center;
+}
+.main-core{
   display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10rpx;
+  margin-bottom: 15rpx;
+  min-height: 175rpx;
+}
+.main-core-item{
+  display: flex;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  height: 400rpx;
-  background-color: #4fc08d;
-  color: #fff;
-  font-size: 100rpx;
+  box-sizing: border-box;
+  width: 20%;
+  height: 175rpx;
 }
-.appname{
-  padding-bottom: 30rpx;
-  margin-bottom: 30rpx;
+.core-item-icon{
+  display: block;
+  width: 85rpx;
+  height: 85rpx;
+  margin: 15rpx auto;
+}
+.core-item-name{
+  display: block;
+  margin: 10rpx;
+}
+.main-list-item{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15rpx;
+  padding: 0 30rpx; 
+}
+.list-item-hd{
+  display: flex;
+  align-items: center;
+  height: 75rpx;
+  border-bottom: 1px solid #eee;
+}
+.list-item-icon{
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 10rpx;
+}
+.list-item-name{
+  letter-spacing: 2px;
+}
+.list-item-bd{
+  min-height: 150rpx;
 }
