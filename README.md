@@ -50,27 +50,41 @@ wecqupt
 
 ## v1.0
 ### 功能及页面
+> 共15个页面，3个主tabnav页面
 
-| 功能        | 路径                        |
-| ----------- | -------------------------- |
-| **【主页】** | pages/index/index(.wxml)   |
-| 课表查询     | pages/core/kb/kb           |
-| 成绩查询     | pages/core/cj/cj           |
-| 考试查询     | pages/core/ks/ks           |
-| 空教室查询   | pages/core/kjs/kjs         |
-| 学生查询     | pages/core/xs/xs           |
-| 一卡通余额   | pages/core/ykt/ykt         |
-| 借阅信息     | pages/core/jy/jy           |
-| 学费信息     | pages/core/xf/xf           |
-| 水电费查询   | pages/core/sdf/sdf         |
-| 物业报修     | pages/core/bx/bx           |
-| **【资讯】** | pages/news/news            |
-| 教务公告     | (同上)                      |
-| OA公告      | (同上)                      |
-| 会议通知     | (同上)                      |
-| 学术讲座     | (同上)                      |
-| 综合新闻     | (同上)                      |
-| **【更多】** | pages/more/more (含绑定用户) |
-| 用户信息     | pages/more/info            |
-| 关于        | pages/more/about           |
-| 反馈        | (跳转至github - new issue)  |
+| 编号 | 功能        | 路径                        |
+|:---:| ----------- | -------------------------- |
+| 1   | **【主页】** | pages/index/index(.wxml)   |
+| 10  | 课表查询     | pages/core/kb/kb           |
+| 11  | 成绩查询     | pages/core/cj/cj           |
+| 12  | 考试查询     | pages/core/ks/ks           |
+| 13  | 空教室查询   | pages/core/kjs/kjs         |
+| 14  | 学生查询     | pages/core/xs/xs           |
+| 15  | 一卡通余额   | pages/core/ykt/ykt         |
+| 16  | 借阅信息     | pages/core/jy/jy           |
+| 17  | 学费信息     | pages/core/xf/xf           |
+| 18  | 水电费查询   | pages/core/sdf/sdf         |
+| 19  | 物业报修     | pages/core/bx/bx           |
+| 2   | **【资讯】** | pages/news/news            |
+|     | 教务公告     | (同上)                      |
+|     | OA公告      | (同上)                      |
+|     | 会议通知     | (同上)                      |
+|     | 学术讲座     | (同上)                      |
+|     | 综合新闻     | (同上)                      |
+| 3   | **【更多】** | pages/more/more (含绑定用户) |
+| 30  | 用户信息     | pages/more/info            |
+| 31  | 关于        | pages/more/about           |
+|     | 反馈        | (跳转至github - new issue)  |
+
+### 分工
+
+| who    | todo0                       |
+|:------:| --------------------------- |
+| 闵聪    | 项目架构，页面1、2、3          |
+| 莫梦竟成 | 视觉设计交互                 |
+| 杨奇奇   | 视觉设计交互                 |
+| 刘浩     | 后台接口完善（基于i重邮）      |
+| 宋思辰   | 页面10、13、14               |
+| 吴鹏举   | 页面11、12、17               |
+| 苏丹     | 页面15、16、18               |
+| 王晓宇   | 页面19、30、31               |
