@@ -130,18 +130,10 @@ $ git clone git@github.com:lanshan-studio/wecqupt.git
 [你的分支]:$ git push origin 你的分支名
 ```
 
-#### pull代码并更新master至你自己的分支
-切换至master
-```
-[你的分支]:$ git checkout master
-```
+#### pull代码并更新master至你自己的分支]
 pull master代码
 ```
-[master]:$ git pull origin master:master
-```
-切换回你的分支
-```
-[master]:$ git checkout 你的分支名
+[你的分支]:$ git pull origin master:master
 ```
 更新master代码到你的分支
 ```
