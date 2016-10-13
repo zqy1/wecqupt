@@ -142,4 +142,6 @@ pull master代码
 
 #### 提交你的代码至master
 * 执行: [提交你的代码至github] (见上文)
-* 在github上进行pull request
+* 在github上进行create pull request，进行如下选择：
+  * base: master
+  * compare: 你的分支
