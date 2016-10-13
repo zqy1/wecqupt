@@ -106,7 +106,7 @@ $ git clone git@github.com:lanshan-studio/wecqupt.git
 [master]:$ git checkout -b 你的分支名
 ```
 ```
-[你的分支名]:$ 
+[你的分支]:$ 
 ```
 
 #### 3、打开微信web开发者工具，并添加项目
@@ -116,20 +116,33 @@ $ git clone git@github.com:lanshan-studio/wecqupt.git
 
 ---
 
-#### pull代码并更新master至你自己的分支
-切换至master
+#### 提交你的代码至github
 ```
-[你的分支名]:$ git checkout master
+执行: [pull代码并更新master至你自己的分支] (见下文)
+```
+```
+[你的分支]:$ git push origin 你的分支名
+```
+
+#### pull代码并更新master至你自己的分支]
+```
+[你的分支]:$ git add .
+```
+```
+[你的分支]:$ git commit -m "提交信息"
 ```
 pull master代码
 ```
-[master]:$ git pull origin master:master
-```
-切换回你的分支
-```
-[master]:$ git checkout 你的分支名
+[你的分支]:$ git pull origin master:master
 ```
 更新master代码到你的分支
 ```
-[你的分支名]:$ git rebase master
+[你的分支]:$ git rebase master
 ```
+
+#### 提交你的代码至master
+* 执行: [提交你的代码至github] (见上文)
+* 在github上进行create pull request，进行如下选择：
+  * base: master
+  * compare: 你的分支
+* 等待项目管理员review代码，并同意pull request
