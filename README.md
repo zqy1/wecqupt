@@ -145,3 +145,4 @@ pull master代码
 * 在github上进行create pull request，进行如下选择：
   * base: master
   * compare: 你的分支
+* 等待项目管理员review代码，并同意pull request
