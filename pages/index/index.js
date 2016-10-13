@@ -15,8 +15,32 @@ Page({
       { id: 'sdf', name: '水电费' },
       { id: 'bx', name: '物业报修' }
     ],
-    list: [
-      { id: 'kb', name: '今日课表' }
-    ]
+    card: {
+      'kb': {
+        show: true,
+        data: {
+          'list': [
+            { what: '计算机新技术', when: '1 - 2 节', where: '5201' },
+            { what: '专业综合实验', when: '7 - 8 节', where: '信科楼S331' }
+          ]
+        }
+      },
+      'ykt': {
+        show: true, //一卡通数据有大量延迟，主页卡片暂不予展示。
+        data: {
+          'balance': '250.50',
+          'cost': {
+            value: ['7.50', '7.50'],
+            total: '15.00'
+          }
+        }
+      },
+      'jy': {
+        show: true
+      },
+      'sdf': {
+        show: true
+      }
+    }
   }
-})
+});

@@ -12,7 +12,66 @@
   height: 120rpx;
   margin: 20rpx;
   margin-left: 0;
+  box-shadow: 1px 2px 3px #ddd;
 }
 .filter-item#all{
   margin-left: 20rpx;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  padding: 5rpx 20rpx 0;
+}
+.list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120rpx;
+  margin-bottom: 20rpx;
+  border-radius: 4rpx;
+  box-shadow: 1px 2px 3px #ddd;
+  padding: 0 30rpx;
+  color: #fff;
+}
+.list-item.jw{
+  background-color: #b69ede;
+}
+.list-item.oa{
+  background-color: #a4c7eb;
+}
+.list-item.hy{
+  background-color: #fadd7f;
+}
+.list-item.jz{
+  background-color: #e394b2;
+}
+.list-item.new{
+  background-color: #ebbda4;
+}
+.list-item-left{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-right: 10rpx;
+}
+.list-item-title{
+  font-size: 32rpx;
+  line-height: 200%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+.list-item-time{
+  font-size: 16rpx;
+  line-height: 125%;
+  opacity: 0.6;
+}
+.list-item-icon{
+  flex: 0 0 60rpx;
+  height: 60rpx;
+  width: 60rpx;
+  border-left: 1px solid #fff;
+  padding-left: 25rpx;
 }

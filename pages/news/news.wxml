@@ -6,9 +6,13 @@
     </block>
   </scroll-view>
   <view class="content">
-    <block wx:for="{{list}}">
-      <view class="list-item">
-      
+    <block wx:for="{{data.list}}">
+      <view class="list-item {{item.type}}">
+        <view class="list-item-left">
+          <text class="list-item-title">{{item.title}}</text>
+          <text class="list-item-time">{{item.time}}</text>
+        </view>
+        <image class="list-item-icon" src="/images/news/{{item.type}}.png" />
       </view>
     </block>
   </view>
