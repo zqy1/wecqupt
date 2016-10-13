@@ -3,34 +3,35 @@
 var app = getApp()
 Page({
   data: {
-    filter: [
-      { id: 'all', name: '全部' },
-      { id: 'jw', name: '教务公告' },
-      { id: 'oa', name: 'OA公告' },
-      { id: 'hy', name: '会议通知' },
-      { id: 'jz', name: '学术讲座' },
-      { id: 'new', name: '综合新闻' }
-    ],
+    filter: {
+      list: [
+        { 'type': 'all', name: '全部' },
+        { 'type': 'jw', name: '教务公告' },
+        { 'type': 'oa', name: 'OA公告' },
+        { 'type': 'hy', name: '会议通知' },
+        { 'type': 'jz', name: '学术讲座' },
+        { 'type': 'new', name: '综合新闻' }
+      ],
+      'active': 'all'
+    },
     data: {
       list: [
-        { 'type': 'jw', 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
-        { 'type': 'oa', 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
-        { 'type': 'oa', 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
-        { 'type': 'jw', 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
-        { 'type': 'hy', 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
-        { 'type': 'new', 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
-        { 'type': 'jz', 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' }
+        { 'type': 'jw', 'id': 1, 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
+        { 'type': 'oa', 'id': 2, 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
+        { 'type': 'oa', 'id': 3, 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
+        { 'type': 'jw', 'id': 4, 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
+        { 'type': 'hy', 'id': 5, 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
+        { 'type': 'new', 'id': 6, 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' },
+        { 'type': 'jz', 'id': 7, 'title': '2016-2017学年第一学期特殊选课审核结果公示', 'time': '2016年09月29日' }
       ]
     }
   },
   onReady: function(){
-    this.setData({
-      'filter_active': 'all'
-    });
+
   },
   changeFilter: function(e){
     this.setData({
-      'filter_active': e.target.id
+      'filter.active': e.target.id
     });
   }
 })

@@ -1,19 +1,21 @@
 <!--news.wxml-->
 <view class="container">
   <scroll-view class="filter" scroll-x="true">
-    <block wx:for="{{filter}}">
-      <image class="filter-item" id="{{item.id}}" bindtap="changeFilter" src="/images/news/{{item.id + (filter_active === item.id ? '@colour.png' : '@gray.png')}}" />
+    <block wx:for="{{filter.list}}">
+      <image class="filter-item" id="{{item.type}}" bindtap="changeFilter" src="/images/news/{{item.type + (filter.active === item.type ? '@colour.png' : '@gray.png')}}" />
     </block>
   </scroll-view>
   <view class="content">
     <block wx:for="{{data.list}}">
-      <view class="list-item {{item.type}}">
-        <view class="list-item-left">
-          <text class="list-item-title">{{item.title}}</text>
-          <text class="list-item-time">{{item.time}}</text>
+      <navigator url="/pages/news/detail?id={{item.id}}" wx:if="{{filter.active === 'all' || filter.active == item.type}}">
+        <view class="list-item {{item.type}}">
+          <view class="list-item-left">
+            <text class="list-item-title">{{item.title}}</text>
+            <text class="list-item-time">{{item.time}}</text>
+          </view>
+          <image class="list-item-icon" src="/images/news/{{item.type}}.png" />
         </view>
-        <image class="list-item-icon" src="/images/news/{{item.type}}.png" />
-      </view>
+      </navigator>
     </block>
   </view>
 </view>
