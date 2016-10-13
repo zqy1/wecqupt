@@ -116,13 +116,7 @@ $ git clone git@github.com:lanshan-studio/wecqupt.git
 
 ---
 
-#### 提交你的代码
-```
-[你的分支]:$ git add .
-```
-```
-[你的分支]:$ git commit -m "提交信息"
-```
+#### 提交你的代码至github
 ```
 执行: [pull代码并更新master至你自己的分支] (见下文)
 ```
@@ -131,6 +125,12 @@ $ git clone git@github.com:lanshan-studio/wecqupt.git
 ```
 
 #### pull代码并更新master至你自己的分支]
+```
+[你的分支]:$ git add .
+```
+```
+[你的分支]:$ git commit -m "提交信息"
+```
 pull master代码
 ```
 [你的分支]:$ git pull origin master:master
@@ -139,3 +139,7 @@ pull master代码
 ```
 [你的分支]:$ git rebase master
 ```
+
+#### 提交你的代码至master
+* 执行: [提交你的代码至github] (见上文)
+* 在github上进行pull request
