@@ -96,6 +96,28 @@
   display: flex;
   flex-direction: column;
 }
+.card-info-hd{
+  display: flex;
+  justify-content: space-between;
+  color: #acacac;
+}
+.card-info-left{
+  display: flex;
+  flex-direction: column;
+}
+.card-info-right{
+  display: flex;
+  flex-direction: column;
+}
+.card-info-name{
+  font-size: 36rpx;
+  letter-spacing: 1px;
+}
+.card-info-number{
+  font-size: 24rpx;
+  line-height: 225%;
+  text-indent: 1px;
+}
 .main-ending{
   display: flex;
   align-items: center;
@@ -196,4 +218,98 @@
   font-size: 40rpx;
   color: #ff9b44;
   padding: 0 10rpx;
+}
+/**借阅信息**/
+.main-card-item#jy .card-item-bd{
+  padding-bottom: 85rpx;
+}
+.jy-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.jy-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20rpx 15rpx 15rpx;
+}
+.jy-book{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  width: 176rpx;
+  height: 231rpx;
+  background-image: url('/images/index/jy-book.png');
+  background-size: 100% 100%;
+  padding: 5rpx 7rpx 50rpx 28rpx;
+  color: #fff;
+  margin-bottom: 10rpx;
+}
+.jy-pickup-time{
+  text-align: right;
+  font-size: 16rpx;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+.jy-pickup-time-text{
+  padding-left: 4rpx;
+}
+.jy-book-name{
+  height: 126rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 150%;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden
+}
+.jy-timing, jy-return-time{
+  line-height: 200%;
+}
+.jy-timing-value{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #729fc3;
+  padding: 0 8rpx;
+}
+.jy-timing-text{
+  font-size: 22rpx;
+  color: #acacac;
+}
+.jy-return-time-value{
+  font-size: 28rpx;
+  color: #7f848a;
+}
+.jy-return-time-text{
+  font-size: 22rpx;
+  color: #acacac;
+  padding-left: 8rpx;
+}
+/**水电费**/
+.main-card-item#sdf .card-item-bd{
+  padding-bottom: 100rpx;
+}
+.sdf-hd{
+  color: #acacac;
+  margin: 40rpx 0 20rpx;
+}
+.sdf-bd{
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0;
+}
+.sdf-key{
+  padding: 0 10rpx;
+}
+.sdf-value{
+  color: #ff9b44;
+  font-size: 100rpx;
+  font-weight: bold;
+  padding: 0 15rpx;
+}
+.sdf-text{
+  color: #acacac;
+  font-size: 28rpx;
 }

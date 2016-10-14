@@ -20,7 +20,10 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#9edeca",
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "We重邮"
+    "navigationBarTitleText": "We重邮",
+    "backgroundColor": "#9edeca", 
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#7f848a",

@@ -12,7 +12,7 @@ Page({
       { id: 'ykt', name: '一卡通' },
       { id: 'jy', name: '借阅信息' },
       { id: 'xf', name: '学费信息' },
-      { id: 'sdf', name: '水电费' },
+      { id: 'sdf', name: '电费' },
       { id: 'bx', name: '物业报修' }
     ],
     card: {
@@ -36,7 +36,13 @@ Page({
         }
       },
       'jy': {
-        show: true
+        show: true,
+        data: {
+          'list': [
+            { 'book_name': '从你的全世界路过', 'pickup_time': '16-04-02', 'return_time': '16-06-02', 'timing': 61 },
+            { 'book_name': '一次又一次再一次的从你的全...', 'pickup_time': '16-04-02', 'return_time': '16-06-02', 'timing': 61 }
+          ]
+        }
       },
       'sdf': {
         show: true
