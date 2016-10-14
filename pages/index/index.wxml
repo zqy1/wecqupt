@@ -78,6 +78,36 @@
         </view>
       </navigator>
       <view class="card-item-bd">
+        <view class="card-info-hd">
+          <view class="card-info-left">
+            <text class="card-info-name">闵聪</text>
+            <text class="card-info-number">2013211664</text>
+          </view>
+          <view class="card-info-right">
+            <view>历史借阅：36</view>
+            <view>当前借阅：2</view>
+          </view>
+        </view>
+        <view class="jy-list">
+          <view class="jy-item" wx:for="{{card.jy.data.list}}">
+            <view class="jy-book">
+              <view class="jy-pickup-time">
+                <text class="jy-pickup-time-value">{{item.pickup_time}}</text>
+                <text class="jy-pickup-time-text">借</text>
+              </view>
+              <text class="jy-book-name">{{item.book_name}}</text>
+            </view>
+            <view class="jy-timing">
+              <text class="jy-timing-text">已借</text>
+              <text class="jy-timing-value">{{item.timing}}</text>
+              <text class="jy-timing-text">天</text>
+            </view>
+            <view class="jy-return-time">
+              <text class="jy-return-time-value">{{item.return_time}}</text>
+              <text class="jy-return-time-text">还</text>
+            </view>
+          </view>
+        </view>
       </view>
     </view>
     <!--水电费-->
@@ -85,14 +115,32 @@
       <navigator url="/pages/core/sdf/sdf">
         <view class="card-item-hd">
           <image class="card-item-icon" src="/images/core/sdf.png" />
-          <text class="card-item-name">水电费</text>
+          <text class="card-item-name">电费</text>
           <view class="card-item-more">
             <image class="card-item-open" src="/images/index/open.png" />
           </view>
         </view>
       </navigator>
       <view class="card-item-bd">
-
+        <view class="card-info-hd">
+          <view class="card-info-left">
+            <text class="card-info-name">15栋415</text>
+          </view>
+          <view class="card-info-right">
+            <view>截止时间：16-02-02</view>
+          </view>
+        </view>
+        <text class="sdf-hd">本月用电：</text>
+        <view class="sdf-bd">
+          <view class="sdf-key">
+            <text class="sdf-value">23</text>
+            <text class="sdf-text">度</text>
+          </view>
+          <view class="sdf-key">
+            <text class="sdf-value">66</text>
+            <text class="sdf-text">元</text>
+          </view>
+        </view>
       </view>
     </view>
   </view>

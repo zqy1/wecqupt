@@ -1,6 +1,6 @@
 //news.js
 //获取应用实例
-var app = getApp()
+var app = getApp();
 Page({
   data: {
     filter: {
@@ -34,4 +34,4 @@ Page({
       'filter.active': e.target.id
     });
   }
-})
+});
