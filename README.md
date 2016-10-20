@@ -1,7 +1,7 @@
 We重邮
 ===
 
-官网：http://we.cqupt.edu.cn
+官网：http://we.cqu.pt（http://we.cqupt.edu.cn)
 
 ### 目录结构
 ```
@@ -63,10 +63,10 @@ wecqupt
 | 13  | 空教室查询   | pages/core/kjs/kjs         |         |        | ✔       |          |
 | 14  | 学生查询     | pages/core/xs/xs           |         |        | ✔       |          |
 | 15  | 一卡通       | pages/core/ykt/ykt         |         |        | ✔       |          |
-| 16  | 借阅信息     | pages/core/jy/jy           |         |        |         |          |
+| 16  | 借阅信息     | pages/core/jy/jy           |         |        | ✔       |          |
 | 17  | 学费信息     | pages/core/xf/xf           |         |        |         |          |
-| 18  | 水电费查询   | pages/core/sdf/sdf         |         |        |         |          |
-| 19  | 物业报修     | pages/core/bx/bx           |         |        |         |          |
+| 18  | 水电费查询   | pages/core/sdf/sdf         |         |        | ✔       |          |
+| 19  | 物业报修     | pages/core/bx/bx           |         |        | ✔       |          |
 | 2   | **【资讯】** | pages/news/news            | ✔       | ✔      |         |          |
 |     | 教务公告     | (同上)                      | ✘       | ✘      | ✔       | ✘        |
 |     | OA公告      | (同上)                      | ✘       | ✘      | ✔       | ✘        |
@@ -79,7 +79,7 @@ wecqupt
 |     | 用户信息     | (同上)                      | ✘       | ✘      |         |          |
 | 30  | 关于        | pages/more/about           |         |        | ✘       | ✘         |
 |     | 反馈        | (跳转至github - new issue)  | ✘       | ✘      | ✘       | ✘         |
-|     | Logo       |  -                         |         | ✘      | ✘       | ✘         |
+|     | Logo       |  -                         | ✔       | ✘      | ✘       | ✘         |
 
 ### 分工
 > 项目期限：10月底前
