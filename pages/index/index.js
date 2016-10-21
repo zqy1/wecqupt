@@ -12,7 +12,7 @@ Page({
       { id: 'ykt', name: '一卡通' },
       { id: 'jy', name: '借阅信息' },
       { id: 'xf', name: '学费信息' },
-      { id: 'sdf', name: '电费' },
+      { id: 'sdf', name: '电费查询' },
       { id: 'bx', name: '物业报修' }
     ],
     card: {

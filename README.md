@@ -50,7 +50,7 @@ wecqupt
   * 语法篇：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
   * 实例篇：http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
 
-## v1.0
+## v0.1.0 beta版计划
 ### 功能及页面
 > 共15个页面，3个主tabnav页面
 
@@ -82,7 +82,7 @@ wecqupt
 |     | Logo       |  -                         | ✔       | ✘      | ✘       | ✘         |
 
 ### 分工
-> 项目期限：10月底前
+> 项目期限：10月底前 / 微信小程序上线前
 
 | who    | todo                  |
 |:------:| --------------------- |
@@ -95,7 +95,8 @@ wecqupt
 | 苏丹     | 页面15、16、18          |
 | 王晓宇   | 页面19、3、30           |
 
-### 开发
+
+## 开发
 > 每个人创建自己的分支进行开发，开发完成后再通过pull request至master分支。
 
 #### 1、clone代码
