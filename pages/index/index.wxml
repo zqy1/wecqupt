@@ -115,7 +115,7 @@
       <navigator url="/pages/core/sdf/sdf">
         <view class="card-item-hd">
           <image class="card-item-icon" src="/images/core/sdf.png" />
-          <text class="card-item-name">电费</text>
+          <text class="card-item-name">电费查询</text>
           <view class="card-item-more">
             <image class="card-item-open" src="/images/index/open.png" />
           </view>
