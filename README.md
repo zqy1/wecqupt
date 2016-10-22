@@ -128,6 +128,7 @@ $ git remote add origin git@github.com:lanshan-studio/wecqupt.git
 
 #### 开发注意：
 * 只能使用flex布局，不懂时多问下
+* 注意代码可维护性，写优雅的代码和注释
 * 多浏览参考资料，注意项目仓库动态
 * 常更新master至你自己的分支
 
