@@ -49,6 +49,7 @@ wecqupt
 * flex布局
   * 语法篇：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
   * 实例篇：http://www.ruanyifeng.com/blog/2015/07/flex-examples.html
+* 分页的部分样式参考：http://weui.io
 
 ## v0.1.0 beta版计划
 ### 功能及页面
@@ -127,15 +128,10 @@ $ git remote add origin git@github.com:lanshan-studio/wecqupt.git
 
 ---
 
-#### @、提交你的代码至github
-```
-执行: [pull代码并更新master至你自己的分支] (见下文)
-```
-```
-[你的分支]:$ git push origin 你的分支名
-```
+## 提交
+> 每个人创建自己的分支进行开发，开发完成后再通过pull request至master分支。
 
-#### @、pull代码并更新master至你自己的分支]
+#### 1、pull代码并更新master至你自己的分支
 ```
 [你的分支]:$ git add .
 ```
@@ -151,8 +147,12 @@ pull master代码
 [你的分支]:$ git rebase master
 ```
 
-#### @、提交你的代码至master
-* 执行: [提交你的代码至github] (见上文)
+#### 2、提交你的代码至github
+```
+[你的分支]:$ git push origin 你的分支名
+```
+
+#### 3、开发完成后，提交你的代码至master
 * 在github上进行create pull request，进行如下选择：
   * base: master
   * compare: 你的分支
