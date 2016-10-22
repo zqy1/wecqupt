@@ -55,7 +55,7 @@ wecqupt
 ### 功能及页面
 > 共17个页面，3个主tabnav页面
 
-| 编号 | 功能        | 路径                        | 视觉设计 | 页面重构 | 后端接口 | 前后端交互 |
+| 编号 | 功能        | 路径                        | 视觉设计 | 页面重构 | 后端接口 | 数据交互 |
 |:---:| ----------- | -------------------------- |:-------:|:------:|:-------:|:--------:|
 | 1   | **【主页】** | pages/index/index(.wxml)   | ✔       | ✔      | ✘       |          |
 | 10  | 课表查询     | pages/core/kb/kb           |         |        |         |          |
@@ -67,7 +67,7 @@ wecqupt
 | 16  | 借阅信息     | pages/core/jy/jy           |         |        | ✔       |          |
 | 17  | 学费信息     | pages/core/xf/xf           | ✔       |        |         |          |
 | 18  | 水电费查询   | pages/core/sdf/sdf         |         |        | ✔       |          |
-| 19a | 物业报修 列表 | pages/core/bx/bx_list      | ✔       |        | ✔       |          |
+| 19a | 物业报修 列表 | pages/core/bx/bx           | ✔       |        | ✔       |          |
 | 19b | 物业报修 申请 | pages/core/bx/bx_apply     | ✔       |        | ✔       |          |
 | 19c | 物业报修 详情 | pages/core/bx/bx_detail    | ✔       |        | ✔       |          |
 | 2   | **【资讯】** | pages/news/news            | ✔       | ✔      |         |          |
@@ -125,6 +125,12 @@ $ git remote add origin git@github.com:lanshan-studio/wecqupt.git
 * **AppID** 选择 无AppID
 * **项目名称** 填写为 wecqupt
 * **项目目录** 选择clone出的git仓库
+
+#### 开发注意：
+* 只能使用flex布局，不懂时多问下
+* 注意代码可维护性，写优雅的代码和注释
+* 多浏览参考资料，注意项目仓库动态
+* 常更新master至你自己的分支
 
 ---
 
