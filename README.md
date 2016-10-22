@@ -1,7 +1,7 @@
 We重邮
 ===
 
-官网：http://we.cqu.pt (http://we.cqupt.edu.cn)
+官网：http://we.cqu.pt \ http://we.cqupt.edu.cn
 
 ### 目录结构
 ```
