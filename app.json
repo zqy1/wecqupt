@@ -14,7 +14,9 @@
     "pages/core/jy/jy",
     "pages/core/xf/xf",
     "pages/core/sdf/sdf",
-    "pages/core/bx/bx"
+    "pages/core/bx/bx_list",
+    "pages/core/bx/bx_apply",
+    "pages/core/bx/bx_detail"
   ],
   "window":{
     "backgroundTextStyle": "light",
