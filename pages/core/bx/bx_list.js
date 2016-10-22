@@ -1,4 +1,4 @@
-//bx-detail.js
+//bx_list.js
 //获取应用实例
 var app = getApp();
 Page({
