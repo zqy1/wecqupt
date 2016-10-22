@@ -126,6 +126,11 @@ $ git remote add origin git@github.com:lanshan-studio/wecqupt.git
 * **项目名称** 填写为 wecqupt
 * **项目目录** 选择clone出的git仓库
 
+#### 开发注意：
+* 只能使用flex布局，不懂时多问下
+* 多浏览参考资料，注意项目仓库动态
+* 常更新master至你自己的分支
+
 ---
 
 ## 提交
