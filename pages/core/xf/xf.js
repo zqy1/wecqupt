@@ -3,67 +3,8 @@
 var app = getApp();
 Page({
   data: {
-    // xfData: [
-    //   {
-    //     "StuID": "2014211750",
-    //     "StuName": "刘浩",
-    //     "StuClass": "0491401",
-    //     "MajorTuition": "2600",
-    //     "SecMajorTuition": "0",
-    //     "GradeTuition": "3680",
-    //     "TotalTuition": "6280",
-    //     "ApartmentPay": "1000",
-    //     "Payed": 0.16,
-    //     "FacultyName": "计算机科学与技术学院",
-    //     "major": "计算机科学与技术",
-    //     "NoPay": "7279.84",
-    //     "GradeName": "2014",
-    //     "Schoolyears": "2016-2017",
-    //     "CollectingPay": "0",
-    //     "TotalPay": 7280
-    //   },
-    //   {
-    //     "StuID": "2014211750",
-    //     "StuName": "刘浩",
-    //     "StuClass": "0491401",
-    //     "MajorTuition": "2600",
-    //     "SecMajorTuition": "0",
-    //     "GradeTuition": "3680",
-    //     "TotalTuition": "6280",
-    //     "ApartmentPay": "1000",
-    //     "Payed": 0.16,
-    //     "FacultyName": "计算机科学与技术学院",
-    //     "major": "计算机科学与技术",
-    //     "NoPay": "7279.84",
-    //     "GradeName": "2014",
-    //     "Schoolyears": "2016-2017",
-    //     "CollectingPay": "0",
-    //     "TotalPay": 7280
-    //   },
-    //   {
-    //     "StuID": "2014211750",
-    //     "StuName": "刘浩",
-    //     "StuClass": "0491401",
-    //     "MajorTuition": "2600",
-    //     "SecMajorTuition": "0",
-    //     "GradeTuition": "3680",
-    //     "TotalTuition": "6280",
-    //     "ApartmentPay": "1000",
-    //     "Payed": 0.16,
-    //     "FacultyName": "计算机科学与技术学院",
-    //     "major": "计算机科学与技术",
-    //     "NoPay": "7279.84",
-    //     "GradeName": "2014",
-    //     "Schoolyears": "2016-2017",
-    //     "CollectingPay": "0",
-    //     "TotalPay": 7280
-    //   }
-    // ]
-  },
-
-  // 页面首次渲染完成
-  onReady: function(){
-    
+    xfData: [], // 学费数据
+    stuInfo: {}, // 学生数据
   },
 
   // 页面加载
@@ -76,10 +17,41 @@ Page({
       },
       success: function(res) {
         console.log(res);
+
+        // 为每一个学年设置是否显示当前学年学费详情的标志open, false表示不显示
+        var list = res.data.data;
+        for (var i = 0, len = list.length; i < len; ++i) {
+          list[i].open = false;         
+        }
+
         _this.setData({
-          xfData: res.data
+          xfData: list,
+          stuInfo: {
+            sno: list[0].StuID,
+            sname: list[0].StuName
+          }
         });
+
       }
+    });
+  },
+
+  // 展示学费详情
+  slideDetail: function(e) {
+   
+    var id = e.currentTarget.id, 
+        list = this.data.xfData;
+
+    // 每次点击都将当前open换为相反的状态并更新到视图，视图根据open的值来切换css
+    for (var i = 0, len = list.length; i < len; ++i) {
+      if (list[i].Schoolyears == id) {
+        list[i].open = !list[i].open;
+      } else {
+        list[i].open = false;
+      }
+    }
+    this.setData({
+      xfData: list
     });
   }
 });

@@ -1,13 +1,13 @@
 <!--xf.wxml-->
 <view class="container">
+
     <!-- 学费查询标题 -->
     <view class="xf-title-wraper">
         <view class="xf-title-info">
             <text class="xf-title">学费查询</text>
             <view class="xf-stu-info">
-                <text>2016-2017学年</text>
-                <text>学生学号：2014210868</text>
-                <text>学生姓名：苏丹</text>
+                <text>学生学号：{{stuInfo.sno}}</text>
+                <text>学生姓名：{{stuInfo.sname}}</text>
             </view>            
         </view> 
         <image class="xf-title-icon" src="/images/core/xf.png" />
@@ -17,11 +17,14 @@
     <view class="xf-types">
         <block wx:for="{{xfData}}" wx:for-item="itemName">
             <view class="xf-type-item">
-                <text class="xf-type-name">{{itemName.Schoolyears}}</text>
-                <view class="xf-type-detail">
+                <view class="xf-head {{itemName.open ? 'xf-head-show' : ''}}" id="{{itemName.Schoolyears}}" bindtap="slideDetail">
+                    <text class="xf-type-name">{{itemName.Schoolyears}}</text>
+                    <image class="xf-item-icon" src="/images/core/xf_item_icon.png" />
+                </view>                
+                <view class="xf-detail {{itemName.open ? 'xf-detail-show' : ''}}">
                     <text>学费：{{itemName.MajorTuition}}</text>
                     <text>学分费：{{itemName.GradeTuition}}</text>
-                    <text>二专费{{itemName.SecMajorTuition}}</text>
+                    <text>二专费：{{itemName.SecMajorTuition}}</text>
                     <text>总学费：{{itemName.TotalTuition}}</text>
                     <text>住宿费：{{itemName.ApartmentPay}}</text>
                     <text>书费：{{itemName.CollectingPay}}</text>
@@ -30,8 +33,7 @@
                     <text>应缴总金额：{{itemName.TotalPay}}</text>
                 </view>
             </view>
-        </block> 
-        
+        </block>         
     </view>
 
 </view>

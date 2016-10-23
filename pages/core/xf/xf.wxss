@@ -54,14 +54,40 @@
     font-size: 30rpx;
     color: #000;
 }
-.xf-type-name {
-    line-height: 147rpx;
-}
-.xf-type-detail {
+.xf-head {
     display: flex;
+    justify-content: space-between;
+    padding: 50rpx 0;
+}
+.xf-detail {
+    display: none;
     flex-direction: column;
 }
-.xf-type-detail text {
+.xf-detail-show {
+    display: flex;
+}
+.xf-detail text {
     line-height: 74rpx;
     border-bottom: 1px solid #d4d4d4;
 }
+
+/**列表是否展开的icon旋转 **/
+.xf-item-icon{
+    width: 35rpx;
+    height: 20rpx;  
+    transition: transform .4s;
+    transform: rotate(0deg);
+}
+.xf-head-show {
+}
+.xf-head-show .xf-item-icon{
+    transform: rotate(180deg);
+}
+
+/**列表展开时标题的颜色变化 **/
+.xf-head-show .xf-type-name {
+    color: #c8c8c8;
+}
+
+
+
