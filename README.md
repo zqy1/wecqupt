@@ -65,7 +65,7 @@ wecqupt
 | 14  | 学生查询     | pages/core/xs/xs           | ✔       |        | ✔       |          |
 | 15  | 一卡通       | pages/core/ykt/ykt         |         |        | ✔       |          |
 | 16  | 借阅信息     | pages/core/jy/jy           |         |        | ✔       |          |
-| 17  | 学费信息     | pages/core/xf/xf           | ✔       |        |         |          |
+| 17  | 学费信息     | pages/core/xf/xf           | ✔       |        | ✔       |          |
 | 18  | 水电费查询   | pages/core/sdf/sdf         |         |        | ✔       |          |
 | 19a | 物业报修 列表 | pages/core/bx/bx           | ✔       |        | ✔       |          |
 | 19b | 物业报修 申请 | pages/core/bx/bx_apply     | ✔       |        | ✔       |          |
@@ -77,7 +77,7 @@ wecqupt
 |     | 学术讲座     | (同上)                      | ✘       | ✘      | ✔       | ✘        |
 |     | 综合新闻     | (同上)                      | ✘       | ✘      | ✔       | ✘        |
 | 20  | 资讯详情     | pages/news/detail          |         |        |         |          |
-| 3   | **【更多】** | pages/more/more            |         |        |         |          |
+| 3   | **【更多】** | pages/more/more            |         |        | ✘       |          |
 |     | 绑定用户     | (同上)                      |         |        |         |          |
 |     | 用户信息     | (同上)                      | ✘       | ✘      |         |          |
 | 30  | 关于        | pages/more/about           |         |        | ✘       | ✘         |
