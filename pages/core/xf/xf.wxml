@@ -18,7 +18,7 @@
         <block wx:for="{{xfData}}" wx:for-item="itemName">
             <view class="xf-type-item">
                 <view class="xf-head {{itemName.open ? 'xf-head-show' : ''}}" id="{{itemName.Schoolyears}}" bindtap="slideDetail">
-                    <text class="xf-type-name">{{itemName.Schoolyears}}</text>
+                    <text class="xf-type-name">{{itemName.Schoolyears}}学年</text>
                     <image class="xf-item-icon" src="/images/core/xf_item_icon.png" />
                 </view>                
                 <view class="xf-detail {{itemName.open ? 'xf-detail-show' : ''}}">

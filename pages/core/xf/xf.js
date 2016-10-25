@@ -37,22 +37,6 @@ Page({
     });
   },
 
-  // 列表动画
-  listShow: function() {
-
-    var animation = wx.createAnimation({
-      duration: 1000,
-      timingFunction: "ease"
-    });
-
-    this.animation = animation;
-    animation.height(300).step();
-    this.setData({
-      listAnimation: this.animation.export()
-    });
-
-  },
-
   // 展示学费详情
   slideDetail: function(e) {
    

@@ -1,4 +1,5 @@
 {    
     "navigationBarBackgroundColor": "#B69EDE",
-    "navigationBarTitleText": "学费查询"    
+    "navigationBarTitleText": "学费查询" ,
+    "backgroundColor": "#B69EDE"  
 }

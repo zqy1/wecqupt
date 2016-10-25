@@ -59,23 +59,17 @@
     justify-content: space-between;
     padding: 50rpx 0;
 }
-/*.xf-detail {
-    display: none;
-    flex-direction: column;
-}
-.xf-detail-show {
-    display: flex;
-}*/
+
 .xf-detail {
     display: flex;
     flex-direction: column;   
     overflow: hidden;
-    height: 0;
-    transition: all .5s;   
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
 }
 .xf-detail-show {
     height: auto;  
-    min-height: 40rpx;  
+    max-height: 1800rpx;  
 }
 .xf-detail text {
     line-height: 74rpx;
@@ -86,7 +80,7 @@
 .xf-item-icon{
     width: 35rpx;
     height: 20rpx;  
-    transition: transform .4s;
+    transition: transform .5s;
     transform: rotate(0deg);
 }
 .xf-head-show {
@@ -97,6 +91,7 @@
 
 /**列表展开时标题的颜色变化 **/
 .xf-head-show .xf-type-name {
+    transition: color ease-in-out .5s;
     color: #c8c8c8;
 }
 
